@@ -281,49 +281,46 @@
           <label for="time">Time</label>
           <input type="time" class="form-control" id="time" name="time" required>
         </div>
-        <button type="submit" class="btn btn-primary bg-secondary-color">Submit</button>
-      </form>
-    </section>
-	<section id="services" class="container my-5">
     <div class="container mt-5">
-        <h2 class="text-center">Family Health SPA</h2>
+        <h2 class="text-center">Please Choose Your Desired Service(s)</h2>
 
         <!-- Swedish/Deep Tissue -->
         <h4 class="mt-4">Swedish/Deep Tissue Massage</h4>
         <ul class="list-group mb-4 category">
-            <li class="list-group-item"><input type="checkbox" class="swedish"> 30min</li>
-            <li class="list-group-item"><input type="checkbox" class="swedish"> 45min</li>
-            <li class="list-group-item"><input type="checkbox" class="swedish"> 60min</li>
-            <li class="list-group-item"><input type="checkbox" class="swedish"> 90min</li>
+            <li class="list-group-item"><input type="checkbox" name="swedish" value="30min"> 30min</li>
+            <li class="list-group-item"><input type="checkbox" name="swedish" value="45min"> 45min</li>
+            <li class="list-group-item"><input type="checkbox" name="swedish" value="60min"> 60min</li>
+            <li class="list-group-item"><input type="checkbox" name="swedish" value="90min"> 90min</li>
         </ul>
 
         <!-- Foot reflexology -->
         <h4>Foot reflexology</h4>
         <ul class="list-group mb-4 category">
-            <li class="list-group-item"><input type="checkbox" class="foot"> 30min</li>
-            <li class="list-group-item"><input type="checkbox" class="foot"> 45min</li>
-            <li class="list-group-item"><input type="checkbox" class="foot"> 60min</li>
-            <li class="list-group-item"><input type="checkbox" class="foot"> 90min</li>
+            <li class="list-group-item"><input type="checkbox" name="foot" value="30min"> 30min</li>
+            <li class="list-group-item"><input type="checkbox" name="foot" value="45min"> 45min</li>
+            <li class="list-group-item"><input type="checkbox" name="foot" value="60min"> 60min</li>
+            <li class="list-group-item"><input type="checkbox" name="foot" value="90min"> 90min</li>
         </ul>
 
         <!-- Combo massage -->
         <h4>Combo massage</h4>
         <ul class="list-group mb-4 category">
-            <li class="list-group-item"><input type="checkbox" class="combo"> 60min</li>
-            <li class="list-group-item"><input type="checkbox" class="combo"> 90min (1hr body + 1/2hr foot + free hot stone)</li>
-            <li class="list-group-item"><input type="checkbox" class="combo"> 120min (1hr body + 1hr foot + free hot stone)</li>
+            <li class="list-group-item"><input type="checkbox" name="combo" value="60min"> 60min</li>
+            <li class="list-group-item"><input type="checkbox" name="combo" value="90min"> 90min (1hr body + 1/2hr foot + free hot stone)</li>
+            <li class="list-group-item"><input type="checkbox" name="combo" value="120min"> 120min (1hr body + 1hr foot + free hot stone)</li>
         </ul>
 
         <!-- Chair massage -->
         <h4>Chair massage</h4>
         <ul class="list-group mb-4 category">
-            <li class="list-group-item"><input type="checkbox" class="chair"> 20min</li>
-            <li class="list-group-item"><input type="checkbox" class="chair"> 30min</li>
-            <li class="list-group-item"><input type="checkbox" class="chair"> 45min</li>
-            <li class="list-group-item"><input type="checkbox" class="chair"> 60min</li>
+            <li class="list-group-item"><input type="checkbox" name="chair" value="20min"> 20min</li>
+            <li class="list-group-item"><input type="checkbox" name="chair" value="30min"> 30min</li>
+            <li class="list-group-item"><input type="checkbox" name="chair" value="45min"> 45min</li>
+            <li class="list-group-item"><input type="checkbox" name="chair" value="60min"> 60min</li>
         </ul>
     </div>
 	</section>
+          <button type="submit" class="btn btn-primary bg-secondary-color">Submit</button>
   </main>
 
   <footer class="bg-light py-3 bg-primary-color">
