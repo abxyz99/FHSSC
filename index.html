@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="../assets/js/color-modes.js"></script>
+  <head><script src="assets/js/color-modes.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,7 +24,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -183,27 +183,27 @@
   <main>
     <section class="container my-5">
 	<div id="home">
-  <img src="../checkout/images/FamilyHealthSpaLogo.png" alt="Family Health Spa Logo" id="logo">
+  <img src="checkout/images/FamilyHealthSpaLogo.png" alt="Family Health Spa Logo" id="logo">
 </div>
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-md-2">
-            <img src="../checkout/images/Logo1.png" alt="Description 1" class="img-fluid">
+        <div class="col-2 col-md-2">
+            <img src="checkout/images/Logo1.png" alt="Description 1" class="img-fluid">
         </div>
-        <div class="col-md-2">
-            <img src="../checkout/images/Logo2.png" alt="Description 2" class="img-fluid">
+        <div class="col-2 col-md-2">
+            <img src="checkout/images/Logo2.png" alt="Description 2" class="img-fluid">
         </div>
-        <div class="col-md-2">
-            <img src="../checkout/images/Logo3.png" alt="Description 3" class="img-fluid">
+        <div class="col-2 col-md-2">
+            <img src="checkout/images/Logo3.png" alt="Description 3" class="img-fluid">
         </div>
-        <div class="col-md-2">
-            <img src="../checkout/images/Logo4.png" alt="Description 4" class="img-fluid">
+        <div class="col-2 col-md-2">
+            <img src="checkout/images/Logo4.png" alt="Description 4" class="img-fluid">
         </div>
-        <div class="col-md-2">
-            <img src="../checkout/images/Logo5.png" alt="Description 5" class="img-fluid">
+        <div class="col-2 col-md-2">
+            <img src="checkout/images/Logo5.png" alt="Description 5" class="img-fluid">
         </div>
-        <div class="col-md-2">
-            <img src="../checkout/images/FootReflexology.png" alt="Description 6" class="img-fluid">
+        <div class="col-2 col-md-2">
+            <img src="checkout/images/FootReflexology.png" alt="Description 6" class="img-fluid">
         </div>
     </div>
 </div>
@@ -213,7 +213,43 @@
       <h1 class="display-4 primary-color text-center">Welcome to Family Health Spa!</h1>
        
         <!-- Image Block Start -->
-        <img src="../checkout/images/Massage1.png" alt="Description of Image" style="width: 100%; display: block; margin-left: auto; margin-right: auto;">
+<!-- Start of Bootstrap Carousel -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="checkout/images/massage_carousel_1.jpg" class="d-block w-100 rounded-carousel-image" alt="Image 1">
+    </div>
+    <div class="carousel-item">
+      <img src="checkout/images/massage_carousel_2.jpg" class="d-block w-100 rounded-carousel-image" alt="Image 2">
+    </div>
+    <div class="carousel-item">
+      <img src="checkout/images/massage_carousel_3.jpg" class="d-block w-100 rounded-carousel-image" alt="Image 3">
+    </div>
+    <div class="carousel-item">
+      <img src="checkout/images/massage_carousel_4.jpg" class="d-block w-100 rounded-carousel-image" alt="Image 4">
+    </div>
+    <div class="carousel-item">
+      <img src="checkout/images/massage_carousel_5.jpg" class="d-block w-100 rounded-carousel-image" alt="Image 5">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- End of Bootstrap Carousel -->
+
         <!-- Image Block End -->
 
         <p class="lead text-center">Experience relaxation and well-being with our professional massage services.</p>
@@ -230,9 +266,13 @@
           <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
         </div>
         <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="phone" class="form-control" id="phone" name="phone" placeholder="(555)555-5555" required>
+        </div>
+        <div class="form-group">
           <label for="email">Email</label>
           <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
-        </div>
+        </div>		
         <div class="form-group">
           <label for="date">Date</label>
           <input type="date" class="form-control" id="date" name="date" required>
@@ -245,7 +285,46 @@
       </form>
     </section>
 	<section id="services" class="container my-5">
-	
+	    <div class="container mt-5">
+        <h2 class="text-center">Family Health SPA</h2>
+
+        <!-- Swedish/Deep Tissue -->
+        <h4 class="mt-4">Swedish/Deep Tissue Massage</h4>
+
+        <!-- Prices for Swedish/Deep Tissue -->
+        <ul class="list-group mb-4">
+            <li class="list-group-item">30min</li>
+            <li class="list-group-item">45min</li>
+            <li class="list-group-item">60min</li>
+            <li class="list-group-item">90min</li>
+        </ul>
+
+        <!-- Foot reflexology -->
+        <h4>Foot reflexology</h4>
+        <ul class="list-group mb-4">
+            <li class="list-group-item">30min</li>
+            <li class="list-group-item">45min</li>
+            <li class="list-group-item">60min</li>
+            <li class="list-group-item">90min</li>
+        </ul>
+
+        <!-- Combo massage -->
+        <h4>Combo massage</h4>
+        <ul class="list-group mb-4">
+            <li class="list-group-item">60min</li>
+            <li class="list-group-item">90min(1hr body + 1/2hr foot + free hot stone)</li>
+            <li class="list-group-item">120min(1hr body + 1hr foot + free hot stone)</li>
+        </ul>
+
+        <!-- Chair massage -->
+        <h4>Chair massage</h4>
+        <ul class="list-group mb-4">
+            <li class="list-group-item">20min</li>
+            <li class="list-group-item">30min</li>
+            <li class="list-group-item">45min</li>
+            <li class="list-group-item">60min</li>
+        </ul>
+    </div>
 	</section>	
   </main>
 
@@ -255,7 +334,11 @@
     </div>
   </footer>
 </div>
-<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap JS (placed before closing body tag) -->
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
 
     <script src="checkout.js"></script></body>
 </html>
